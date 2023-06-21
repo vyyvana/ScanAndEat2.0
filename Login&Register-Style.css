@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css?family=Cormorant+unicase:700|Poppins:200");
+@import url("https://fonts.googleapis.com/css?family=Cormorant Unicase");
+@import url("https://fonts.googleapis.com/css?family=SF Pro Text Semibold");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #425f57;
+    overflow-x: hidden;
+}
+    
+.awalan-screen{
+    align-items: center;
+    border: 0.07vw none;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 1.6vw;
+}
+
+.vector-atas{
+    position: relative;
+    width: 100%;
+    bottom: 0%;
+}
+
+.vector-atas img {
+    position: absolute;
+    top: 42vw;
+}
+
+.vector-awalan{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.awalan-screen .frame{
+    display: flex;
+    position: absolute;
+    width: fit-content;
+    align-items: flex-start;
+    border: 0.35vw solid;
+    border-color: rgba(242,255,216,1);
+    border-radius: 5vw;
+    gap: 0.69vw;
+    overflow: hidden;
+}
+
+.datang{
+    color: rgba(242,255,216,1);
+    font-family: "Cormorant Unicase";
+    font-size: 8vw;
+    font-weight: 700;
+    left: 15.21vw;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: 11.6vw;
+    min-height: 10vw;
+    min-width: 61.6vw;
+    text-align: center;
+}
+
+.isi{
+    color: rgba(242,255,216,1);
+    font-family: "Poppins";
+    font-size: 3.3vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    font-weight: 200;
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: center;
+}
+
+.login{
+    margin-top: 5vw;
+    align-items: center;
+    border: 0.07vw none;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.login .logpage{
+    color: rgba(242,255,216,1);
+    font-family: 'Cormorant Unicase';
+    font-size: 80px;
+    font-weight: 700;
+    left: 15.21vw;
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 10.07vw;
+    min-width: 61.6vw;
+    text-align: center;
+    margin-bottom: 1vw;
+}
+
+.InputBox{
+    position: relative;
+}
+
+.InputBox input{
+    position: relative;
+    width: 100%;
+    padding: 1vw 1vw;
+    outline: none;
+    font-size: 2.5vw;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 4vw;
+    background: rgba(242,255,216,1);
+    border: 3px solid #749F82;
+    border-radius: 3vw;
+    width: 40vw;  
+    margin-top: 4.4vw;
+    height: 4.5vw;
+}
+.InputBox ::placeholder{
+    text-align: center;
+}
+.InputBox .judulBox{
+    font-family: 'Cormorant Unicase';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vw;
+    line-height: 48px;
+    color: rgba(242,255,216,1);
+    left: 2.43vw;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+}
+
+.checkbox #keep{
+    width:20px;
+    height:20px;
+    position: absolute;
+    left: 29vw;
+}
+
+label {
+    font-family: "Cormorant Unicase";
+    font-size: 3.3vw;
+    color: rgb(242,255,216);
+    position: absolute;
+    top: 47.5vw;
+    left: 36vw;
+}
+
+input {
+    margin: 0.5vw;
+}
+
+.button1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button1 button{
+    width: 25vw;
+    height: 8vh;
+    color: rgba(242,255,216,1);
+    border: 5px solid #749F82;
+    border-radius: 70px;
+    font-family: 'Cormorant Unicase';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.8vw;
+    cursor: pointer;
+    background-color: transparent;
+    margin-top: 10vh;
+}
+
+.Register {
+    margin-top: 3vw;
+    top: 70vw;
+    left: 28vw;
+    position: absolute;
+    font-size: 3.3vw;
+}
+
+.Register p {
+    color: #749F82;
+    left: 3.5vw;
+    width: 100%;
+}
+
+.Register a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(242,255,216);
+    font-size: 3.5vw;
+    top: -3.9vw;
+    width: 10vw;    
+    left: 17vw;
+}
