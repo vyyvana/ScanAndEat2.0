@@ -11,7 +11,7 @@
     <div class="awalan-screen">
         <h1 class="datang">Selamat Datang!</h1>
         <div class="vector-atas">
-            <img class="vector-awalan" src="/Assets/vector-awalan.png" alt="Vawalan">
+            <img class="vector-awalan" src="Assets/vector-awalan.png" alt="Vawalan">
             <p class="isi">Harap Melakukan Registrasi Atau Login Sebelum 
                     Melanjutkan Perjalanan Anda Dengan Scan & EAT
             </p>
