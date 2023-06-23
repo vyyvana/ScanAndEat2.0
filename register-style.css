@@ -73,7 +73,7 @@ form .choice-extra #checkbox{
     height: 1.2vw;
 }
 
-button{
+.login-button{
     width: 17vw;
     height: 5.3vw;
     color: rgba(242,255,216,1);
@@ -142,7 +142,7 @@ button{
         left: -6vw;
     }
 
-    button{
+    .login-button{
         width: 30vw;
         height: 10vw;
         border: 3.5px solid #749F82;

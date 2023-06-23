@@ -35,7 +35,7 @@
 
                 <div class="Register">
                     <p>User Baru?</p>
-                    <a href="Register.html">Register Sekarang</a>
+                    <a href="Register.php">Register Sekarang</a>
                 </div>
             </div>
         </div>
