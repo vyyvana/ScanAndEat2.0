@@ -30,7 +30,7 @@
                     <label for="keep">Keep me signed in</label>
                 </div>
                 <div class="button1">
-                    <button class="btn">Login</button>
+                    <a href="index.html"><button class="btn">Login</button></a>
                 </div>
 
                 <div class="Register">
