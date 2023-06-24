@@ -41,15 +41,15 @@
     <form class="form" action="" method="post">
         <div class="input-box">
             <label>Nama</label>
-            <input type="text" id="input" class="login-input" name="username" required>
+            <input type="text" id="input" class="login-input" name="username" placeholder="Username" required>
         </div>
         <div class="input-box">
             <label>Email</label>
-            <input type="email" id= "input" class="login-input" name="email" required>
+            <input type="email" id= "input" class="login-input" name="email" placeholder="Email" required>
         </div>
         <div class="input-box">
             <label>Password</label>
-            <input type="password" id="input" class="login-input" name="password" required>
+            <input type="password" id="input" class="login-input" name="password" placeholder="Password" required>
         </div>
         <div class="choice">
             <p>Pilih Alergi Anda</p>
@@ -72,7 +72,7 @@
             </div>
         </div>
         <input type="submit" name="submit" value="Register" class="login-button">
-        <p class="link"><a href="Login&Register.php">Click to Login</a></p>
+        <p class="link"><a href="Login.php">Click to Login</a></p>
     </form>
 </body>
 </html>
