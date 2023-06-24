@@ -43,11 +43,11 @@
             <h1 class="login-title">Login</h1>
                 <div class="InputBox">
                     <h3 class="judulBox">Email</h3>
-                    <input type="email" class="login-input" name="email" placeholder="Email" autofocus="true"/>
+                    <input type="email" class="login-input" name="email" placeholder="Email" autofocus="true" required/>
                 </div>
                 <div class="InputBox">
                     <h3 class="judulBox">Password</h3>
-                    <input type="password" class="login-input" name="password" placeholder="Password"/>
+                    <input type="password" class="login-input" name="password" placeholder="Password" required/>
                 </div>
                 <div class="checkbox">
                     <input type="checkbox" id="keep" name="keep" checked>

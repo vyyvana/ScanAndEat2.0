@@ -168,7 +168,8 @@ h1{
 .Register a{
     position: relative;
     text-decoration: none;
-    color: rgb(242,255,216);
+    color: blue;
+    text-decoration: underline;
     font-size: 3.5vw;
     top: -3.9vw;
     width: 10vw;    
