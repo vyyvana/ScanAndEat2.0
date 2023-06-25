@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Login&Register-Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@600&family=Cormorant:wght@600&family=Maven+Pro:wght@500&family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="awalan-screen">
@@ -30,7 +33,8 @@
                     <label for="keep">Keep me signed in</label>
                 </div>
                 <div class="button1">
-                    <a href="index.html"><button class="btn">Login</button></a>
+                    <!-- <a href="index.html"><button class="button">Login</button></a> -->
+                    <a href="index.html"><div class="button-green">Login</div></a>
                 </div>
 
                 <div class="Register">
