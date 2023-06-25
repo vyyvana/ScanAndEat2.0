@@ -11,6 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@600&family=Cormorant:ital,wght@0,100;1,600&family=Maven+Pro:wght@500&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <?php 
+    require('db.php');
+    include("auth.php");
+    $email = $_SESSION['email'];
+    $query = "SELECT username FROM users WHERE email = '$email'";
+    $result = mysqli_query($con, $query);
+    $row = mysqli_fetch_assoc($result);
+    $username = $row['username'];
+    ?>
     <div class="header_all">
         <div class="header_logo">
             <a href="index.html"><img src="img/SCAN & EAT.png" alt=""></a>
@@ -20,7 +29,7 @@
             <a href="index.html"><li>Home</li></a>
             <a href="Scan.html"><li>Scan</li></a>
             <a href="About.html"><li>About</li></a>
-            <a href="Profile.html"><li><img src="img/Profile.png" alt="">
+            <a href="Profile.php"><li><img src="img/Profile.png" alt="">
             </li></a>
         </ul>
 
@@ -30,7 +39,7 @@
     <div class="profilePicture">
         <div class="h1-green title">Profile Page</div> 
         <img src="img/user.png" alt="">
-        <div class="h2-green">Lorem Ipsum's Profile</div>
+        <div class="h2-green"><?php echo $username ?> Profile</div>
     </div>
 
     <div class="profile-Content">
