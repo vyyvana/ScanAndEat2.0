@@ -15,10 +15,11 @@
     require('db.php');
     include("auth.php");
     $email = $_SESSION['email'];
-    $query = "SELECT username FROM users WHERE email = '$email'";
+    $query = "SELECT * FROM users WHERE email = '$email'";
     $result = mysqli_query($con, $query);
     $row = mysqli_fetch_assoc($result);
     $username = $row['username'];
+    $password = "Cipet";
     ?>
     <div class="header_all">
         <div class="header_logo">
@@ -45,7 +46,11 @@
     <div class="profile-Content">
         <div class="content1">
             <div class="h1-white content-title">Informasi Dasar User</div>
-            <div class="paragraph_maven-pro content-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas iure quos vel illum voluptas? Magni iure vero perspiciatis deleniti rem repellendus ipsum velit. Accusamus eum assumenda quas recusandae animi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas iure quos vel illum voluptas? Magni iure vero perspiciatis deleniti rem repellendus ipsum velit. Accusamus eum assumenda quas recusandae animi?</div>
+            <div class="paragraph_maven-pro content-paragraph">
+                <p>Nama: <?php echo $username?></p>
+                <p>Email: <?php echo $email?></p>
+                <p>Password: <?php echo $password?></p>
+            </div>
         </div>
 
         <div class="content2">
