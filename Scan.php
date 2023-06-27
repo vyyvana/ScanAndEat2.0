@@ -16,12 +16,12 @@
 <body>
     <?php 
         require('db.php');
+        $productname = '';
         if(isset($_POST['hasil'])){
             $scan = $_POST='hasil';
 
             $query = "SELECT * FROM produk WHERE bpom = '$scan'";
             $result = mysqli_query($con, $query);
-
             if($result && mysqli_num_rows($result)>0){
                 $row = mysqli_fetch_assoc($result);
                 $productname = $row['nama'];
