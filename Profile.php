@@ -62,7 +62,7 @@
     <div class="footer">
         <img class="footer_brandLogo" src="img/SCAN & EAT.png" alt="">
 
-        <a href="Scan.html">
+        <a href="Scan.php">
             <div class="button-white-hollow">Scan Sekarang!</div>
         </a>
 
