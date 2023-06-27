@@ -28,7 +28,7 @@
 
         <ul>
             <a href="index.html"><li>Home</li></a>
-            <a href="Scan.html"><li>Scan</li></a>
+            <a href="Scan.php"><li>Scan</li></a>
             <a href="About.html"><li>About</li></a>
             <a href="Profile.php"><li><img src="img/Profile.png" alt="">
             </li></a>

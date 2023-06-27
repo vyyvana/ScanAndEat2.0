@@ -14,6 +14,30 @@
 </head>
 
 <body>
+    <?php 
+        require('db.php');
+        if(isset($_POST['hasil'])){
+            $scan = $_POST='hasil';
+
+            $query = "SELECT * FROM produk WHERE bpom = '$scan'";
+            $result = mysqli_query($con, $query);
+
+            if($result && mysqli_num_rows($result)>0){
+                $row = mysqli_fetch_assoc($result);
+                $productname = $row['nama'];
+                echo "<script> 
+                document.getElementById('scannedTextMemo').value='$productname';
+                document.getElementById('scannedTextMemoHist').value += '\n$scannedCode';
+                <script>";
+            } else {
+                echo "<script>
+                document.getElementById('scannedTextMemo').value = 'Product not found';
+                document.getElementById('scannedTextMemoHist').value += '\n$scannedCode (Not found)';
+                 </script>";
+            }
+            
+        }
+    ?>
     <div class="header_all">
         <div class="header_logo">
             <a href="index.html"><img src="img/SCAN & EAT.png" alt=""></a>
@@ -21,7 +45,7 @@
 
         <ul>
             <a href="index.html"><li>Home</li></a>
-            <a href="Scan.html"><li class="active">Scan</li></a>
+            <a href="Scan.php"><li class="active">Scan</li></a>
             <a href="About.html"><li>About</li></a>
             <a href="Profile.php"><li><img src="img/Profile.png" alt="">
             </li></a>
@@ -66,8 +90,9 @@
                     </div>
                 </div>
                 <div class="FlexPanel form-field-input-panel">
-                    <textarea id="scannedTextMemo" class="textInput form-memo form-field-input textInput-readonly" rows="3" readonly>
+                    <textarea id="scannedTextMemo" name="hasil" class="textInput form-memo form-field-input textInput-readonly" rows="3" readonly>
                     </textarea>
+                    <?php echo $productname ?>
                 </div>
                 </div>
                 <div class="form-field form-field-memo">
