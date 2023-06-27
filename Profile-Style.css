@@ -181,7 +181,7 @@ img {
 
 .profile-Content {
     width: 80%;
-    height: 100vw;
+    height: 88vw;
     /* background-color: rebeccapurple; */
     position: relative;
     left: 10%;
@@ -190,7 +190,7 @@ img {
 .content1 {
     margin-top: 5vw;
     width: 100%;
-    height: 38vw;
+    height: 25vw;
     background-color: rgb(66, 95, 87);
     margin-bottom: 7vw;
     border-radius: 4vw;
@@ -213,7 +213,8 @@ img {
 }
 
 .content-paragraph {
-    font-size: 2.6vw;
+    font-size: 2.8vw;
+    line-height: 4vw;
     padding-left: 4vw;
     padding-right: 3vw;
     color: rgb(243, 255, 217);

@@ -55,12 +55,12 @@
 
         <div class="content2">
             <div class="h1-white content-title">Informasi Alergi User</div>
-            <div class="paragraph_maven-pro content-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas iure quos vel illum voluptas? Magni iure vero perspiciatis deleniti rem repellendus ipsum velit. Accusamus eum assumenda quas recusandae animi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas iure quos vel illum voluptas? Magni iure vero perspiciatis deleniti rem repellendus ipsum velit. Accusamus eum assumenda quas recusandae animi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas iure quos vel illum voluptas? Magni iure vero perspiciatis deleniti rem repellendus ipsum velit. Accusamus eum assumenda quas recusandae animi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas iure quos vel illum voluptas? Magni iure vero perspiciatis deleniti rem repellendus ipsum velit.</div>
+            <div class="paragraph_maven-pro content-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas iure quos vel illum voluptas? Magni iure vero perspiciatis deleniti rem repellendus ipsum velit. Accusamus eum assumenda quas recusandae animi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas iure quos vel illum voluptas? Magni iure vero perspiciatis deleniti rem repellendus ipsum velit. Accusamus eum assumenda quas recusandae animi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas iure quos vel illum voluptas? Magni iure vero perspiciatis deleniti rem repellendus ipsum velit.</div>
         </div>
     </div>
 
     <div class="footer">
-        <img class="footer_brandLogo" src="img/SCAN & EAT.png" alt="">
+        <a href="index.html"><img class="footer_brandLogo" src="img/SCAN & EAT.png" alt=""></a>
 
         <a href="Scan.php">
             <div class="button-white-hollow">Scan Sekarang!</div>
@@ -68,15 +68,15 @@
 
         
         <div class="footer_logos">
-            <a href="">
+            <a href="whatsapp://send?text=Hello%20World!">
                 <img src="img/whatsapp.png" alt="">
             </a>
     
-            <a href="">
+            <a href="https://www.instagram.com/binusuniversityofficial/" target="_blank">
                 <img src="img/instagram.png" alt="">
             </a>
     
-            <a href="">
+            <a href="https://mail.google.com" target="_blank">
                 <img src="img/email.png" alt="">
             </a>
         </div>
