@@ -8,6 +8,20 @@
     <title>Document</title>
 </head>
 <body>
+    <?php
+    require('db.php');
+    if(isset($_POST['scannedText'])){
+        $scannedText = $_POST['scannedText'];
+        
+        // Use the $scannedText variable as needed
+        
+        // For example, you can perform database operations or other processing with the scanned text
+        
+        // You can also return a response from the PHP script if needed
+        echo "Scanned text received: " . $scannedText;
+    }
+
+    ?>
     <div class="header_all">
         <div class="header_logo">
             <a href="index.html"><img src="img/SCAN & EAT.png" alt=""></a>

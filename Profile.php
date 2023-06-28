@@ -19,7 +19,7 @@
     $result = mysqli_query($con, $query);
     $row = mysqli_fetch_assoc($result);
     $username = $row['username'];
-    $password = "Cipet";
+    $password = "Amburadul";
     ?>
     <div class="header_all">
         <div class="header_logo">
