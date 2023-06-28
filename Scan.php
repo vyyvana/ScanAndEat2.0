@@ -31,7 +31,7 @@
                 header("Location: ProductInfo.php");
             } else {
                 echo "<div class='form'>
-                      <h3>No Product Fone.</h3><br/>
+                      <h3>No Product Found.</h3><br/>
                       <p class='link'>Click here to <a href='Scan.php'>Scan</a> again.</p>
                       </div>";
             }
@@ -103,9 +103,9 @@
                     </textarea>
                 </div>
                 </div>
-                <form action="" method="post" class="form">
+                <form method="post" class="form" name="bpom">
                     <input type="text" class="bpom" name="bpom" id="bpom">
-                    <input type="submit" value="Submit" name="submit" class="login-button"/>
+                    <input type="submit" value="submit" name="submit" class="scan-button"/>
                 </form>
             </div>
             <br>

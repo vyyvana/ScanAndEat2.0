@@ -30,6 +30,14 @@
     $egg = $row['egg'];
     $peanut = $row['peanut'];
     $image = $row['image'];
+    $des1 = "devy";
+    $des2 = "ivana";
+
+    $email = $_SESSION['email'];
+    $queryuser = "SELECT * FROM users WHERE email = '$email";
+    $resuser = mysqli_query($con, $query);
+    $row = mysqli_fetch_assoc($resuser);
+    $user_kafein = $row['caffeine'];
     ?>
     <div class="header_all">
         <div class="header_logo">
@@ -44,22 +52,21 @@
             </li></a>
         </ul>
     </div>
-
     <div class="content">
-        <img class="BackButton" src="/Assets/BackButton.png" alt="BackButton">
+        <a href="Scan.php"><img class="BackButton" src="Assets/BackButton.png" alt="BackButton"></a>
         <h1 class="judul-content">Informasi Scan Produk</h1>
     </div>
 
     <div class ="foto-produk">
-        <img src="/Assets/TropicaNaslim.png" alt="">
+        <img src="produk/<?php echo $nama ?>.png" alt="">
     </div>
 
 
     <div class="deskripsi-produk">
         
-        <h1 class="nama-produk"><?php echo $username ?></h1>
-        <p class="des1">Tropicana Slim Avocado Coffee merupakan minuman kopi dengan rasa alpukat yang nikmat dan lebih rendah kafein.</p>
-        <p class="des2">Aman untuk dikonsumsi oleh  segala usia, termasuk ibu hamil dan menyusui.</p>
+        <h1 class="nama-produk"><?php echo $nama ?></h1>
+        <p class="des1"><?php echo $des1 ?></p>
+        <p class="des2"><?php echo $des2 ?></p>
     </div>
 
     <div class="kandungan-produk">
@@ -76,9 +83,6 @@
         </table>
 
         <div class="info-saji">
-            <p class = "info-sajian">4 sajian per-Kemasan</p>
-            <hr>
-            <!-- <br> -->
             <h2 class="judul-perkemasan">Jumlah per-Kemasan</h2>
         </div>
         
@@ -112,14 +116,14 @@
             </tr>
             <tr>
                 <td id="kiri">Garam (natrium)</td>
-                <td><?php echo $username ?></td>
+                <td><?php echo $garam ?></td>
             </tr>      
         </table>
     </div>
 
     <div class="informasi-user">
         <h1 class="judul-informasi">Informasi Alergi User</h1>
-        <p class="isi-informasi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis urna lobortis, molestie nibh a, tempor metus. Nulla facilisis, ex in porta volutpat, nulla lectus auctor metus, vel bibendum ipsum dolor quis metus. Pellentesque quam eros, fermentum sed massa ut, placerat placerat tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia neque id est dignissim, auctor dictum nisl fringilla. Donec tempor neque sit amet odio iaculis, fermentum ultrices tellus commodo. Morbi pharetra mi in lorem dignissim laoreet. Nam sodales arcu nec est aliquet blandit. Cras eleifend magna arcu, sit amet tempus sem euismod at. Integer euismod nulla quam, a eleifend ex elementum ut. Nulla eu elit lobortis, porttitor odio at, rutrum nisi. Fusce interdum nec ligula vel malesuada. Sed nec scelerisque lacus. Integer nisl justo, varius mattis mi sit amet, faucibus condimentum tortor.</p>
+        <p class="isi-informasi">ABC</p>
     </div>
 
 
