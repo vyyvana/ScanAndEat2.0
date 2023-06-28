@@ -15,35 +15,27 @@
 </head>
 <body>
     <?php 
+    
         require('db.php');
         session_start();
-        $productname = '';
-        if(isset($_POST['scannedText'])){
-            // $productname = 'abc';
-            $scan = $_POST['scannedText'];
-            echo "Scanned text received: " . $scan;
-            $query = "SELECT * FROM produk WHERE bpom = '$scan'";
-            $result = mysqli_query($con, $query);
-            $row = mysqli_fetch_assoc($result);
-            $productname = $row['nama'];
-            $productimg = $row['image'];
-            if($result && mysqli_num_rows($result)>0){
-                // $row = mysqli_fetch_assoc($result);
-                // $productname = $row['nama'];
-                $_SESSION['bpom']=$scan;
-                echo $productname;
-                // "
-                // document.getElementById('scannedTextMemo').value='$productname';
-                // document.getElementById('scannedTextMemoHist').value = '\n$scan';
-                // ";
+        
+        if(isset($_POST['bpom'])){
+            $bpom = stripslashes($_REQUEST['bpom']); 
+            $bpom = mysqli_real_escape_string($con, $bpom);
+            // Check user is exist in the database
+            $query    = "SELECT * FROM produk WHERE bpom='$bpom'";
+            $result = mysqli_query($con, $query) or die(mysql_error($con));
+            $rows = mysqli_num_rows($result);
+            if ($rows == 1) {
+                $_SESSION['bpom'] = $bpom;
+                header("Location: ProductInfo.php");
             } else {
-                echo "<script>
-                document.getElementById('scannedTextMemo').value = 'Product not found';
-                document.getElementById('scannedTextMemoHist').value = '\n$scan (Not found)';
-                 </script>";
+                echo "<div class='form'>
+                      <h3>No Product Fone.</h3><br/>
+                      <p class='link'>Click here to <a href='Scan.php'>Scan</a> again.</p>
+                      </div>";
             }
-        }
-        echo $productname;
+        } else {
     ?>
     <div class="header_all">
         <div class="header_logo">
@@ -148,5 +140,8 @@
     <script>
         JsQRScannerReady();
     </script>
+<?php
+    }
+?>
 </body>
 </html>

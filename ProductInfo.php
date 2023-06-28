@@ -10,17 +10,26 @@
 <body>
     <?php
     require('db.php');
-    if(isset($_POST['scannedText'])){
-        $scannedText = $_POST['scannedText'];
-        
-        // Use the $scannedText variable as needed
-        
-        // For example, you can perform database operations or other processing with the scanned text
-        
-        // You can also return a response from the PHP script if needed
-        echo "Scanned text received: " . $scannedText;
-    }
-
+    include("auth.php");
+    $bpom = $_SESSION['bpom'];
+    $query = "SELECT * FROM produk WHERE bpom = '$bpom'";
+    $result = mysqli_query($con, $query);
+    $row = mysqli_fetch_assoc($result);
+    $nama = $row['nama'];
+    $serving = $row['serving'];
+    $energy = $row['energy'];
+    $lemak = $row['lemak'];
+    $lemakjenuh = $row['lemakjenuh'];
+    $protein = $row['protein'];
+    $karbo = $row['karbo'];
+    $gula = $row['gula'];
+    $garam = $row['garam'];
+    $caffeine = $row['caffeine'];
+    $seafood = $row['seafood'];
+    $dairy = $row['dairy'];
+    $egg = $row['egg'];
+    $peanut = $row['peanut'];
+    $image = $row['image'];
     ?>
     <div class="header_all">
         <div class="header_logo">
@@ -47,7 +56,8 @@
 
 
     <div class="deskripsi-produk">
-        <h1 class="nama-produk">Tropicana Slim Avocado Coffee</h1>
+        
+        <h1 class="nama-produk"><?php echo $username ?></h1>
         <p class="des1">Tropicana Slim Avocado Coffee merupakan minuman kopi dengan rasa alpukat yang nikmat dan lebih rendah kafein.</p>
         <p class="des2">Aman untuk dikonsumsi oleh  segala usia, termasuk ibu hamil dan menyusui.</p>
     </div>
@@ -60,7 +70,7 @@
         <table class="table1">
             <tr>
                 <td id="kiri">Takaran Saji</td>
-                <td>14 gram</td>
+                <td><?php echo $serving ?></td>
             </tr>
             
         </table>
@@ -75,38 +85,34 @@
         <table class="table2">
             <tr class="atas">
                 <td id="kiri">Energi Total</td>
-                <td>60 kkal</td>
+                <td><?php echo $energy ?></td>
             </tr>
             <!-- <hr style="width:80%;"> -->
             <hr>
             
             <tr>
                 <td id="kiri">Lemak Total</td>
-                <td>2 gram</td> 
+                <td><?php echo $lemak ?></td> 
             </tr>
             <tr>
                 <td id="kiri">Lemak Jenuh</td>
-                <td>2 gram</td>
+                <td><?php echo $lemakjenuh ?></td>
             </tr>
             <tr>
                 <td id="kiri">Protein</td>
-                <td>1 gram</td>
+                <td><?php echo $protein ?></td>
             </tr>
             <tr>
                 <td id="kiri">Karbohidrat Total</td>
-                <td>10 gram</td>
+                <td><?php echo $karbo ?></td>
             </tr>
             <tr>
                 <td id="kiri">Gula Total</td>
-                <td>1 gram</td>
-            </tr>
-            <tr>
-                <td id="kiri">Laktosa</td>
-                <td>1 gram</td>
+                <td><?php echo $gula ?></td>
             </tr>
             <tr>
                 <td id="kiri">Garam (natrium)</td>
-                <td>45 miligram</td>
+                <td><?php echo $username ?></td>
             </tr>      
         </table>
     </div>
