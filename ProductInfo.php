@@ -34,15 +34,15 @@
     $des2 = $row['des2'];
 
     $email = $_SESSION['email'];
-    $queryuser = "SELECT * FROM users WHERE email = '$email";
-    $resuser = mysqli_query($con, $query);
-    $row = mysqli_fetch_assoc($resuser);
-    $username = $row['username'];
-    $user_kafein = $row['caffeine'];
-    $user_seafood = $row['seafood'];
-    $user_dairy = $row['dairy'];
-    $user_egg = $row['egg'];
-    $user_peanut = $row['peanut'];
+    $queryuser = "SELECT * FROM users WHERE email = '$email'";
+    $resuser = mysqli_query($con, $queryuser);
+    $rowuser = mysqli_fetch_assoc($resuser);
+    $user_kafein = $rowuser['caffeine'];
+    $user_seafood = $rowuser['seafood'];
+    $user_dairy = $rowuser['dairy'];
+    $user_egg = $rowuser['egg'];
+    $user_peanut = $rowuser['peanut'];
+    $username = $rowuser['username'];
     $Desc = '';
 
     if($user_kafein == 1)
