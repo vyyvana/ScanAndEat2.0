@@ -34,31 +34,32 @@
     $des2 = $row['des2'];
 
     $email = $_SESSION['email'];
-    $queryuser = "SELECT * FROM users WHERE email = '$email'";
-    $resuser = mysqli_query($con, $queryuser);
-    $rowuser = mysqli_fetch_assoc($resuser);
-    $user_kafein = $rowuser['caffeine'];
-    $user_seafood = $rowuser['seafood'];
-    $user_dairy = $rowuser['dairy'];
-    $user_egg = $rowuser['egg'];
-    $user_peanut = $rowuser['peanut'];
-    $username = $rowuser['username'];
+    $queryuser = "SELECT * FROM users WHERE email = '$email";
+    $resuser = mysqli_query($con, $query);
+    $row = mysqli_fetch_assoc($resuser);
+    $username = $row['username'];
+    $user_kafein = $row['caffeine'];
+    $user_seafood = $row['seafood'];
+    $user_dairy = $row['dairy'];
+    $user_egg = $row['egg'];
+    $user_peanut = $row['peanut'];
     $Desc = '';
+
     if($user_kafein == 1)
     {
-        $Desc = $username . ' is Allergic with Caffeine. Therefore, it is need to be aware to not consuming products that contain caffeine. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+        $Desc = $username . ' alergi dengan kafein. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
         if($user_seafood == 1)
         {
-            $Desc = $username . ' is Allergic with Caffeine, and Seafood. Therefore, it is need to be aware to not consuming products that contain caffeine and seafood. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+            $Desc = $username . ' alergi dengan kafein dan makanan laut. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
             if($user_dairy == 1)
             {
-                $Desc = $username . ' is Allergic with Caffeine, Seafood, and Dairy. Therefore, it is need to be aware to not consuming products that contain caffeine, seafood, and dairy. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+                $Desc = $username . ' alergi dengan Kafein, makanan laut dan susu. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
                 if($user_egg == 1)
                 {
-                    $Desc = $username . ' is Allergic with Caffeine, Seafood, Dairy, and Egg. Therefore, it is need to be aware to not consuming products that contain caffeine, seafood, dairy and egg. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+                    $Desc = $username . ' alergi dengan Kafein, makanan laut, susu dan telur. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
                     if($user_peanut == 1)
                     {
-                        $Desc = $username . ' is Allergic with Caffeine, Seafood, Dairy, Egg, and Peanut. Therefore, it is need to be aware to not consuming products that contain caffeine, seafood, dairy, egg and peanut. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+                        $Desc = $username . ' alergi dengan Kafein, makanan laut, susu, telur dan kacang. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
                     }
                 }
             }
@@ -66,46 +67,46 @@
     }
     else if($user_seafood == 1)
     {
-        $Desc = $username . ' is Allergic with Seafood. Therefore, it is need to be aware to not consuming products that contain seafood. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+        $Desc = $username . ' alergi dengan makanan laut. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
         if($user_dairy == 1)
             {
-                $Desc = $username . ' is Allergic with Seafood, and Dairy. Therefore, it is need to be aware to not consuming products that contain seafood, and dairy. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+                $Desc = $username . ' alergi dengan makanan laut dan susu. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
                 if($user_egg == 1)
                 {
-                    $Desc = $username . ' is Allergic with Seafood, Dairy, and Egg. Therefore, it is need to be aware to not consuming products that contain seafood, dairy, and egg. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+                    $Desc = $username . ' alergi dengan makanan laut, susu, dan telur. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
                     if($user_peanut == 1)
                     {
-                        $Desc = $username . ' is Allergic with Seafood, Dairy, Egg, and Peanut. Therefore, it is need to be aware to not consuming products that contain seafood, dairy, egg, and peanut. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+                        $Desc = $username . ' alergi dengan makanan laut, susu, telur, kacang. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
                     }
                 }
             }
     }
     else if($user_dairy == 1)
     {
-        $Desc  = $username . ' is Allergic with Dairy. Therefore, it is need to be aware to not consuming products that contain dairy. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+        $Desc  = $username . ' alergi dengan susu. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
         if($user_egg == 1)
                 {
-                    $Desc = $username . ' is Allergic with Dairy, and Egg. Therefore, it is need to be aware to not consuming products that contain dairy, and egg. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+                    $Desc = $username . ' alergi dengan susu dan telur. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
                     if($user_peanut == 1)
                     {
-                        $Desc = $username . ' is Allergic with Dairy, Egg, and Peanut. Therefore, it is need to be aware to not consuming products that contain dairy, egg and peanut. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+                        $Desc = $username . ' alergi dengan susu, telur, dan kacang. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
                     }
                 }
     }
     else if($user_egg == 1)
     {
-        $Desc = $username . ' is Allergic with Egg. Therefore, it is need to be aware to not consuming products that contain egg. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+        $Desc = $username . ' alergi dengan telur. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
         if($user_peanut == 1)
         {
-            $Desc = $username . ' is Allergic with Egg, and Peanut. Therefore, it is need to be aware to not consuming products that contain egg and peanut. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+            $Desc = $username . ' alergi dengan telur dan kacang. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
         }
     }
     else if($user_peanut == 1)
     {
-        $Desc = $username . ' is Allergic with Peanut. Therefore, it is need to be aware to not consuming products that contain [eanut]. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+        $Desc = $username . ' alergi dengan kacang. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
     }
     else{
-        $Desc = $username . ' has no allergic. You can consume anything you want. However, it is needed to notice the product contain. Knowing the ingredients allows us to make informed decisions, steering clear of potential allergens or harmful substances that could have adverse effects on our bodies.';
+        $Desc = $username . ' tidak memiliki alergi. Anda dapat mengkonsumsi apapun yang Anda inginkan. Namun perlu diperhatikan kandungan produknya. Mengetahui bahan-bahannya memungkinkan kita membuat keputusan berdasarkan informasi, menghindari alergen potensial atau zat berbahaya yang dapat berdampak buruk pada tubuh kita.';
     }
     ?>
     
