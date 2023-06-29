@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="Profile-Style.css">
+    <link rel="stylesheet" href="profile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@600&family=Cormorant:ital,wght@0,100;1,600&family=Maven+Pro:wght@500&family=Poppins:wght@500&display=swap" rel="stylesheet">
@@ -19,7 +19,6 @@
     $result = mysqli_query($con, $query);
     $row = mysqli_fetch_assoc($result);
     $username = $row['username'];
-    $password = "Amburadul";
     $caffeine = $row['caffeine'];
     $seafood = $row['seafood'];
     $dairy = $row['dairy'];
@@ -116,9 +115,8 @@
         <div class="content1">
             <div class="h1-white content-title">Informasi Dasar User</div>
             <div class="paragraph_maven-pro content-paragraph">
-                <p>Nama: <?php echo $username?></p>
+                <p>Nama: <?php echo $username?></p><br>
                 <p>Email: <?php echo $email?></p>
-                <p>Password: <?php echo $password?></p>
             </div>
         </div>
 

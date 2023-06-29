@@ -7,7 +7,7 @@
 
     <script type="text/javascript" src="JsQRScanner-master/JsQRScanner-master/docs/js/jsqrscanner.nocache.js" defer></script>
 
-    <link rel="stylesheet" href="Scan-Style.css">
+    <link rel="stylesheet" href="scan.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@600&family=Cormorant:wght@600&family=Maven+Pro:wght@500&family=Poppins:wght@300&display=swap" rel="stylesheet">

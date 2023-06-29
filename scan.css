@@ -200,6 +200,29 @@ body{
     margin-bottom: 2vw;
 }
 
+.bpom{
+    width: 50vw;
+    height: 8vh;
+    margin-right: 8vw;
+    font-size: 14px;
+    text-align: center;
+}
+
+.scan-button{
+    width: 25vw;
+    height: 8vh;
+    color: #425f57;
+    border: 5px solid #749F82;
+    border-radius: 70px;
+    font-family: 'Cormorant Unicase';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.8vw;
+    cursor: pointer;
+    background-color: transparent;
+    margin-top: 3vh;
+}
+
 /* footer */
 .footer {
     position: relative;
