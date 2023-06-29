@@ -341,7 +341,7 @@ td{
         justify-content: center;
         align-items: center;
         color: #F3FFD9;
-        top: -80vw;
+        top: -70vw;
         position: absolute;
     }
 
@@ -350,14 +350,14 @@ td{
         position: absolute;
         width: 80vw;
         left: 10vw;
-        top: 139vh;
+        top: 137vh;
         font-weight: 500;
         font-size: 3vw;
         text-align: center;
     }
     
     .des2{
-        margin-top: 15vw;
+        margin-top: 12vw;
     }
 
     .judul-kandungan{
