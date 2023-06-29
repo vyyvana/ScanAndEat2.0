@@ -50,60 +50,96 @@
         $Desc = $username . ' alergi dengan kafein. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
         if($user_seafood == 1)
         {
-            $Desc = $username . ' alergi dengan kafein dan makanan laut. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+            $Desc = $username . ' alergi dengan kafein dan makanan laut. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein dan makanan laut. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
             if($user_dairy == 1)
             {
-                $Desc = $username . ' alergi dengan kafein, makanan laut dan susu. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+                $Desc = $username . ' alergi dengan kafein, makanan laut dan susu. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein, makanan laut dan susu. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
                 if($user_egg == 1)
                 {
-                    $Desc = $username . ' alergi dengan kafein, makanan laut, susu dan telur. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+                    $Desc = $username . ' alergi dengan kafein, makanan laut, susu dan telur. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein, makanan laut, susu dan telur. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
                     if($user_peanut == 1)
                     {
-                        $Desc = $username . ' alergi dengan kafein, makanan laut, susu, telur dan kacang. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+                        $Desc = $username . ' alergi dengan kafein, makanan laut, susu, telur dan kacang. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein, makanan laut, susu, telur dan kacang. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
                     }
                 }
             }
         }
-    }
-    else if($user_seafood == 1)
-    {
-        $Desc = $username . ' alergi dengan makanan laut. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
-        if($user_dairy == 1)
+        else if($user_dairy == 1)
+        {
+            $Desc = $username . ' alergi dengan kafein dan susu. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein dan susu. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+            if($user_egg == 1)
             {
-                $Desc = $username . ' alergi dengan makanan laut dan susu. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
-                if($user_egg == 1)
+                $Desc = $username . ' alergi dengan kafein, susu dan telur. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein, susu dan telur. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+                if($user_peanut == 1)
                 {
-                    $Desc = $username . ' alergi dengan makanan laut, susu, dan telur. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
-                    if($user_peanut == 1)
-                    {
-                        $Desc = $username . ' alergi dengan makanan laut, susu, telur, kacang. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
-                    }
+                    $Desc = $username . ' alergi dengan kafein, susu, telur dan kacang. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein, susu, telur dan kacang. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+                }
+            }
+        }
+        else if($user_egg == 1)
+            {
+                $Desc = $username . ' alergi dengan kafein dan telur. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein dan telur. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+                if($user_peanut == 1)
+                {
+                    $Desc = $username . ' alergi dengan kafein, telur dan kacang. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein, telur dan kacang. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
                 }
             }
     }
+    else if($user_seafood == 1)
+    {
+        $Desc = $username . ' alergi dengan makanan laut. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung makanan laut. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+        if($user_dairy == 1)
+        {
+            $Desc = $username . ' alergi dengan makanan laut dan susu. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung makanan laut dan susu. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+            if($user_egg == 1)
+            {
+                $Desc = $username . ' alergi dengan makanan laut, susu, dan telur. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandungmakanan laut, susu, dan telur. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+                if($user_peanut == 1)
+                {
+                    $Desc = $username . ' alergi dengan makanan laut, susu, telur, kacang. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung makanan laut, susu, telur, kacang. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+                }
+            }
+        }
+        else if($user_egg == 1)
+        {
+            $Desc = $username . ' alergi dengan makanan laut dan telur. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung makanan laut dan telur. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+            if($user_peanut == 1)
+            {
+                $Desc = $username . ' alergi dengan makanan laut, telur dan kacang. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung makanan laut, telur dan kacang. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+            }
+        }
+        else if($user_peanut == 1)
+        {
+            $Desc = $username . ' alergi dengan makanan laut dan kacang. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung makanan laut dan kacang. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+        }
+    }
     else if($user_dairy == 1)
     {
-        $Desc  = $username . ' alergi dengan susu. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+        $Desc  = $username . ' alergi dengan susu. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung susu. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
         if($user_egg == 1)
-                {
-                    $Desc = $username . ' alergi dengan susu dan telur. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
-                    if($user_peanut == 1)
-                    {
-                        $Desc = $username . ' alergi dengan susu, telur, dan kacang. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
-                    }
-                }
+        {
+            $Desc = $username . ' alergi dengan susu dan telur. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung susu dan telur. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+            if($user_peanut == 1)
+            {
+                $Desc = $username . ' alergi dengan susu, telur, dan kacang. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung susu, telur, dan kacang. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+            }
+        }
+        else if($user_peanut == 1)
+        {
+            $Desc = $username . ' alergi dengan susu dan kacang. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung susu dan kacang. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+        }
     }
     else if($user_egg == 1)
     {
-        $Desc = $username . ' alergi dengan telur. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+        $Desc = $username . ' alergi dengan telur. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung telur. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
         if($user_peanut == 1)
         {
-            $Desc = $username . ' alergi dengan telur dan kacang. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+            $Desc = $username . ' alergi dengan telur dan kacang. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung telur dan kacang. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
         }
     }
     else if($user_peanut == 1)
     {
-        $Desc = $username . ' alergi dengan kacang. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+        $Desc = $username . ' alergi dengan kacang. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kacang. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
     }
     else{
         $Desc = $username . ' tidak memiliki alergi. Anda dapat mengkonsumsi apapun yang Anda inginkan. Namun perlu diperhatikan kandungan produknya. Mengetahui bahan-bahannya memungkinkan kita membuat keputusan berdasarkan informasi, menghindari alergen potensial atau zat berbahaya yang dapat berdampak buruk pada tubuh kita.';
