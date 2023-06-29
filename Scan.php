@@ -18,7 +18,6 @@
     
         require('db.php');
         session_start();
-        
         if(isset($_POST['bpom'])){
             $bpom = stripslashes($_REQUEST['bpom']); 
             $bpom = mysqli_real_escape_string($con, $bpom);

@@ -23,6 +23,7 @@
         $rows = mysqli_num_rows($result);
         if ($rows == 1) {
             $_SESSION['email'] = $email;
+            $_SESSION['bpom'] = true;
             header("Location: Profile.php");
         } else {
             echo "<div class='form'>

@@ -144,6 +144,7 @@
     else{
         $Desc = $username . ' tidak memiliki alergi. Anda dapat mengkonsumsi apapun yang Anda inginkan. Namun perlu diperhatikan kandungan produknya. Mengetahui bahan-bahannya memungkinkan kita membuat keputusan berdasarkan informasi, menghindari alergen potensial atau zat berbahaya yang dapat berdampak buruk pada tubuh kita.';
     }
+
     ?>
     
 
@@ -267,9 +268,27 @@
         var u_susu = "<?php echo $user_dairy ?>";
         var u_telur = "<?php echo $user_egg ?>";
         var u_kacang = "<?php echo $user_peanut ?>";
-        if(p_kafein == u_kafein || p_seafood == u_seafood || p_susu == u_susu || p_telur == u_telur || p_kacang == u_kacang){
-            document.body.style.backgroundColor = "#A22522";
+        console.log(p_kafein);
+        console.log(p_seafood);
+        console.log(p_susu);
+        console.log(p_telur);
+        console.log(p_kacang);
+        console.log(u_kafein);
+        console.log(u_seafood);
+        console.log(u_susu);
+        console.log(u_telur);
+        console.log(u_kacang);
+        if((p_kafein == u_kafein && p_kafein != 0) || (p_seafood == u_seafood && p_seafood != 0) || (p_susu == u_susu && p_susu != 0) || (p_telur == u_telur && p_telur != 0) || (p_kacang == u_kacang && p_kacang != 0)){
+            document.body.style.backgroundColor = "#A22522"; 
+        } else{
+            document.body.style.backgroundColor = "#425F57";
         }
+        // if((p_kafein && u_kafein) == "1" || (p_seafood && u_seafood) == "1" || (p_susu && u_susu) == "1" || (p_telur && u_telur) == "1" || (p_kacang && u_kacang) == "1"){
+        //     document.body.style.backgroundColor = "#A22522";
+            
+        // } else{
+        //     document.body.style.backgroundColor = "#425F57";
+        // }
     </script>
 </body>
 </html>

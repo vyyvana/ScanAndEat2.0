@@ -161,6 +161,10 @@
             <div class="paragraph_maven-pro content-paragraph"><?php echo $Desc ?></div>
         </div>
     </div>
+    <form action="" class="form">
+        <p><a href="logout.php">Logout</a></p>
+
+    </form>
 
     <div class="footer">
         <a href="index.html"><img class="footer_brandLogo" src="img/SCAN & EAT.png" alt=""></a>
