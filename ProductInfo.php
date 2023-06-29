@@ -30,15 +30,87 @@
     $egg = $row['egg'];
     $peanut = $row['peanut'];
     $image = $row['image'];
-    $des1 = "devy";
-    $des2 = "ivana";
+    $des1 = $row['des1'];
+    $des2 = $row['des2'];
 
     $email = $_SESSION['email'];
     $queryuser = "SELECT * FROM users WHERE email = '$email";
     $resuser = mysqli_query($con, $query);
     $row = mysqli_fetch_assoc($resuser);
+    $username = $row['username'];
     $user_kafein = $row['caffeine'];
+    $user_seafood = $row['seafood'];
+    $user_dairy = $row['dairy'];
+    $user_egg = $row['egg'];
+    $user_peanut = $row['peanut'];
+    $Desc = '';
+
+    if($user_kafein == 1)
+    {
+        $Desc = $username . ' is Allergic with Caffeine. Therefore, it is need to be aware to not consuming products that contain caffeine. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+        if($user_seafood == 1)
+        {
+            $Desc = $username . ' is Allergic with Caffeine, and Seafood. Therefore, it is need to be aware to not consuming products that contain caffeine and seafood. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+            if($user_dairy == 1)
+            {
+                $Desc = $username . ' is Allergic with Caffeine, Seafood, and Dairy. Therefore, it is need to be aware to not consuming products that contain caffeine, seafood, and dairy. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+                if($user_egg == 1)
+                {
+                    $Desc = $username . ' is Allergic with Caffeine, Seafood, Dairy, and Egg. Therefore, it is need to be aware to not consuming products that contain caffeine, seafood, dairy and egg. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+                    if($user_peanut == 1)
+                    {
+                        $Desc = $username . ' is Allergic with Caffeine, Seafood, Dairy, Egg, and Peanut. Therefore, it is need to be aware to not consuming products that contain caffeine, seafood, dairy, egg and peanut. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+                    }
+                }
+            }
+        }
+    }
+    else if($user_seafood == 1)
+    {
+        $Desc = $username . ' is Allergic with Seafood. Therefore, it is need to be aware to not consuming products that contain seafood. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+        if($user_dairy == 1)
+            {
+                $Desc = $username . ' is Allergic with Seafood, and Dairy. Therefore, it is need to be aware to not consuming products that contain seafood, and dairy. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+                if($user_egg == 1)
+                {
+                    $Desc = $username . ' is Allergic with Seafood, Dairy, and Egg. Therefore, it is need to be aware to not consuming products that contain seafood, dairy, and egg. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+                    if($user_peanut == 1)
+                    {
+                        $Desc = $username . ' is Allergic with Seafood, Dairy, Egg, and Peanut. Therefore, it is need to be aware to not consuming products that contain seafood, dairy, egg, and peanut. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+                    }
+                }
+            }
+    }
+    else if($user_dairy == 1)
+    {
+        $Desc  = $username . ' is Allergic with Dairy. Therefore, it is need to be aware to not consuming products that contain dairy. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+        if($user_egg == 1)
+                {
+                    $Desc = $username . ' is Allergic with Dairy, and Egg. Therefore, it is need to be aware to not consuming products that contain dairy, and egg. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+                    if($user_peanut == 1)
+                    {
+                        $Desc = $username . ' is Allergic with Dairy, Egg, and Peanut. Therefore, it is need to be aware to not consuming products that contain dairy, egg and peanut. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+                    }
+                }
+    }
+    else if($user_egg == 1)
+    {
+        $Desc = $username . ' is Allergic with Egg. Therefore, it is need to be aware to not consuming products that contain egg. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+        if($user_peanut == 1)
+        {
+            $Desc = $username . ' is Allergic with Egg, and Peanut. Therefore, it is need to be aware to not consuming products that contain egg and peanut. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+        }
+    }
+    else if($user_peanut == 1)
+    {
+        $Desc = $username . ' is Allergic with Peanut. Therefore, it is need to be aware to not consuming products that contain [eanut]. These kinds of product will have significant effect on your health. A conscious and informed approach to product selection is key to maintaining a balanced and healthy lifestyle.';
+    }
+    else{
+        $Desc = $username . ' has no allergic. You can consume anything you want. However, it is needed to notice the product contain. Knowing the ingredients allows us to make informed decisions, steering clear of potential allergens or harmful substances that could have adverse effects on our bodies.';
+    }
     ?>
+    
+
     <div class="header_all">
         <div class="header_logo">
             <a href="index.html"><img src="img/SCAN & EAT.png" alt=""></a>
@@ -58,12 +130,11 @@
     </div>
 
     <div class ="foto-produk">
-        <img src="produk/<?php echo $nama ?>.png" alt="">
+        <img src="produk/<?php echo $nama ?>.jpg" alt="">
     </div>
 
 
     <div class="deskripsi-produk">
-        
         <h1 class="nama-produk"><?php echo $nama ?></h1>
         <p class="des1"><?php echo $des1 ?></p>
         <p class="des2"><?php echo $des2 ?></p>
@@ -123,7 +194,7 @@
 
     <div class="informasi-user">
         <h1 class="judul-informasi">Informasi Alergi User</h1>
-        <p class="isi-informasi">ABC</p>
+        <p class="isi-informasi"><?php echo $Desc ?></p>
     </div>
 
 

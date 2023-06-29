@@ -69,43 +69,9 @@
 
         <div class="box-color">
             <h1 class="h1-green">Hasil Scan Product</h1>
-            <div class="row-element">
-                <div class="form-field form-field-memo">
-                    <div class="form-field-caption-panel">
-                        <div class="gwt-Label form-field-caption">
-                            Scanned Image
-                        </div>
-                    </div>
-                    <div class="FlexPanel form-field-input-panel">
-                        <div id="imageContainerDiv" class="imageContainer"></div>
-                    </div>
-                    </div>
-                <div class="form-field form-field-memo">
-                <div class="form-field-caption-panel">
-                    <div class="gwt-Label form-field-caption">
-                        Scanned Product
-                        <!-- <img src="<?php echo $productimg ?>" alt=""> -->
-                    </div>
-                </div>
-                <div class="FlexPanel form-field-input-panel">
-                    <textarea id="scannedTextMemo" class="textInput form-memo form-field-input textInput-readonly"  rows="6" readonly>
-                    </textarea>
-                </div>
-                </div>
-                <div class="form-field form-field-memo">
-                <div class="form-field-caption-panel">
-                    <div class="gwt-Label form-field-caption">
-                        Scanned text history
-                    </div>
-                </div>
-                <div class="FlexPanel form-field-input-panel">
-                    <textarea id="scannedTextMemoHist" class="textInput form-memo form-field-input textInput-readonly" value="" rows="6" readonly>
-                    </textarea>
-                </div>
-                </div>
                 <form method="post" class="form" name="bpom">
                     <input type="text" class="bpom" name="bpom" id="bpom">
-                    <input type="submit" value="submit" name="submit" class="scan-button"/>
+                    <input type="submit" value="Submit" name="submit" class="scan-button"/>
                 </form>
             </div>
             <br>
