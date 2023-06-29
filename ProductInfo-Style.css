@@ -320,19 +320,17 @@ td{
     }
 
     .foto-produk{
-        /* position: relative; */
         position: absolute;
-        left: 10%;
+        left: 9%;
         align-items: center;
         justify-content: center;
         width: 80%;
         height: 55vw;
-        margin-top: 5vw;
-        /* background-color: red; */
+        margin-top: 10vw;
     }
 
     .foto-produk img {
-        position: relative;
+        position:   relative;
         left: 20%;
         align-items: center;
         height: 55vw;
@@ -343,7 +341,7 @@ td{
         justify-content: center;
         align-items: center;
         color: #F3FFD9;
-        top: -47vw;
+        top: -80vw;
         position: absolute;
     }
 
@@ -367,13 +365,14 @@ td{
         width: 51.5vw;
         height: 5vh;
         left: 25vw;
-        top: 125vh;
+        top: 99vh;
         font-size: 6vw;
+        margin-top: 4vh;
     }
     
     .detail-kandungan{
         position: absolute;
-        top: 137vh;
+        top: 112vh;
         left: 21vw;
         line-height: 6vh;
         font-size: 3.5vw;
@@ -381,6 +380,7 @@ td{
 
     .judul-perkemasan{
         font-size: 6vw;
+        margin-top: 4vh;
     }
 
     .table1{
@@ -392,7 +392,7 @@ td{
     }
 
     .informasi-user{
-        top: 208vh;
+        top: 169vh;
         /* background-color: red; */
         width: 80%;
         /* left: 2vw; */
@@ -411,6 +411,6 @@ td{
     }
 
     .footer {
-        top: 305vw;
+        top: 277vw;
     }
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ProductInfo-Style.css">
-    <title>Document</title>
+    <title>Product</title>
 </head>
 <body>
     <?php
@@ -220,5 +220,20 @@
             </a>
         </div>
     </div>
+    <script>
+        var p_kafein = "<?php echo $caffeine ?>";
+        var p_seafood = "<?php echo $seafood ?>";
+        var p_susu = "<?php echo $dairy ?>";
+        var p_telur = "<?php echo $egg ?>";
+        var p_kacang = "<?php echo $peanut ?>";
+        var u_kafein = "<?php echo $user_kafein ?>";
+        var u_seafood = "<?php echo $user_seafood ?>";
+        var u_susu = "<?php echo $user_dairy ?>";
+        var u_telur = "<?php echo $user_egg ?>";
+        var u_kacang = "<?php echo $user_peanut ?>";
+        if(p_kafein == u_kafein || p_seafood == u_seafood || p_susu == u_susu || p_telur == u_telur || p_kacang == u_kacang){
+            document.body.style.backgroundColor = "#A22522";
+        }
+    </script>
 </body>
 </html>
