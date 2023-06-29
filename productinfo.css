@@ -363,7 +363,7 @@ td{
     .judul-kandungan{
         position: absolute;
         width: 51.5vw;
-        height: 5vh;
+        height: 10vh;
         left: 25vw;
         top: 99vh;
         font-size: 6vw;
@@ -374,7 +374,7 @@ td{
         position: absolute;
         top: 112vh;
         left: 21vw;
-        line-height: 6vh;
+        line-height: 7vh;
         font-size: 3.5vw;
     }
 
@@ -385,10 +385,10 @@ td{
 
     .table1{
         text-align: center;
-        left: 6vw;
+        left: 0vw;
         position: absolute;
-        top: -5vh;
-        width: 48vw;
+        top: -4vh;
+        width: 55vw;
     }
 
     .informasi-user{

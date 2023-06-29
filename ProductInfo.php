@@ -148,7 +148,7 @@
         <table class="table1">
             <tr>
                 <td id="kiri">Takaran Saji</td>
-                <td><?php echo $serving ?></td>
+                <td id="kanan"><?php echo $serving ?></td>
             </tr>
             
         </table>
