@@ -26,6 +26,7 @@
             $query = "INSERT into users (username, password, email, caffeine, seafood, dairy, egg, peanut) VALUES ('$username', '" . md5($password) . "', '$email', '$caffeine', '$seafood', '$dairy', '$egg', '$peanut')";
             $result = mysqli_query($con, $query);
             if($result){
+                header("Location: Login.php");
                 echo "<div class='form'>
                 <h3>You are registered succesfully.</h3><br/>
                 </div>";

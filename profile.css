@@ -198,7 +198,7 @@ img {
 
 .content2 {
     width: 100%;
-    height: 42vw;
+    height: 49vw;
     background-color: rgb(66, 95, 87);
     border-radius: 4vw;
 }
@@ -219,6 +219,24 @@ img {
     padding-right: 3vw;
     color: rgb(243, 255, 217);
     font-weight: lighter;
+}
+
+.logout-box{
+    text-align: center;
+}
+
+.logout{
+    padding: 1.5vw 4.5vw;
+    color:  #425f57;
+    border: 5px solid #749F82;
+    border-radius: 70px;
+    font-family: 'Cormorant Unicase';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.8vw;
+    cursor: pointer;
+    background-color: transparent;
+    margin-top: 3vh;
 }
 
 /* footer */

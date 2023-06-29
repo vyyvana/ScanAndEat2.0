@@ -162,8 +162,9 @@
         </div>
     </div>
     <form action="" class="form">
-        <p><a href="logout.php">Logout</a></p>
-
+        <div class="logout-box">
+            <a href="logout.php" class ="logout">Logout</a>
+        </div>
     </form>
 
     <div class="footer">
