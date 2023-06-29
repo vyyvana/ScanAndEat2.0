@@ -53,13 +53,13 @@
             $Desc = $username . ' alergi dengan kafein dan makanan laut. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
             if($user_dairy == 1)
             {
-                $Desc = $username . ' alergi dengan Kafein, makanan laut dan susu. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+                $Desc = $username . ' alergi dengan kafein, makanan laut dan susu. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
                 if($user_egg == 1)
                 {
-                    $Desc = $username . ' alergi dengan Kafein, makanan laut, susu dan telur. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+                    $Desc = $username . ' alergi dengan kafein, makanan laut, susu dan telur. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
                     if($user_peanut == 1)
                     {
-                        $Desc = $username . ' alergi dengan Kafein, makanan laut, susu, telur dan kacang. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
+                        $Desc = $username . ' alergi dengan kafein, makanan laut, susu, telur dan kacang. Oleh karena itu perlu diwaspadai untuk tidak mengkonsumsi produk yang mengandung kafein. Jenis produk ini akan berdampak signifikan pada kesehatan Anda. Pendekatan sadar dan informasi untuk pemilihan produk adalah kunci untuk mempertahankan gaya hidup yang seimbang dan sehat.';
                     }
                 }
             }
