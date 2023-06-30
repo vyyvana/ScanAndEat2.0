@@ -187,12 +187,12 @@ body{
 
 .box-color{
     position: relative;
-    top: 70vw;
+    top: 71vw;
     background-color: #F3FFD9;
     color: #425f57;
     border-radius: 20px;
     font-weight: 700;
-    padding: 30px;
+    padding: 20px;
 }
 
 .box-color h1 {
@@ -225,8 +225,9 @@ body{
 
 /* footer */
 .footer {
-    position: relative;
-    top: 77vw;
+    position: absolute;
+    top: 100%;
+    width: 100%;
     background-color: rgb(116,159,130);
     display: flex;
     height: 10vw;

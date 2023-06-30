@@ -36,7 +36,7 @@ h1{
 
 .vector-atas img {
     position: absolute;
-    top: 42vw;
+    top: 86%;
 }
 
 .vector-awalan{
@@ -152,7 +152,8 @@ h1{
 
 .Register {
     margin-top: 4vh;
-    top: 70vw;
+    top: 100%;
+    /* top: 75vw; */
     left: 28vw;
     position: absolute;
     font-size: 3.3vw;
